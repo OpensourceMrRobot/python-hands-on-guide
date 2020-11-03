@@ -21,3 +21,8 @@ print(f'memory address of variable list_numbers: {id(list_numbers)}, value: {lis
 
 list_numbers.append(4)
 print(f'memory address of variable list_numbers: {id(list_numbers)}, value: {list_numbers}')
+
+# BONUS PART
+
+# Learn more:
+# Memory management in Python: https://www.youtube.com/watch?v=F6u5rhUQ6dU

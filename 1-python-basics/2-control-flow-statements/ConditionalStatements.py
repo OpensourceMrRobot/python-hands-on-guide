@@ -29,9 +29,10 @@ else:  # And of course we can use the else statement.
     print('Child')
 
 # This part is after our conditional statements...
-print("Program all done!")
+print("After conditional statement")
 
-# If you want to use empty conditional statements[as a placeholder till implementation] you can use the pass keyword:
+# If you want to use empty conditional statements [as a placeholder till implementation] 
+# you can use the pass keyword:
 
 if age > 101:
     pass  # Won't compile otherwise

@@ -1,5 +1,7 @@
 # Here are some different way's to work with string literals:
 
+# Try this out in an ipython session...
+
 # 'This is a literal string'
 # "This is another string"
 #

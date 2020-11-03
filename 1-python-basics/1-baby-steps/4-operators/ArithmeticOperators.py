@@ -1,4 +1,7 @@
+result_msg = "result is:"
+
 print('Let\'s 1-start with the Arithmetic operators')
+
 first_numb = int(input('Fill in a number:\n'))
 second_numb = int(input('Fill in another number:\n'))
 
@@ -7,27 +10,27 @@ print("\nRESULTS:\n")
 # addition:
 
 result = first_numb + second_numb
-print(F'{first_numb} {"+"} {second_numb} {"result is:"} {result}')
+print(F'{first_numb} {"+"} {second_numb} {result_msg} {result}')
 
 # subtraction:
 
 result = first_numb - second_numb
-print(F'{first_numb} {"-"} {second_numb} {"result is:"} {result}')
+print(F'{first_numb} {"-"} {second_numb} {result_msg} {result}')
 
 # multiplication:
 
 result = first_numb * second_numb
-print(F'{first_numb} {"*"} {second_numb} {"result is:"} {result}')
+print(F'{first_numb} {"*"} {second_numb} {result_msg} {result}')
 
 # division:
 
 result = first_numb / second_numb
-print(F'{first_numb} {"/"} {second_numb} {"result is:"} {result}')
+print(F'{first_numb} {"/"} {second_numb} {result_msg} {result}')
 
 # Loose floating point value:
 
 result = first_numb // second_numb
-print(F'{first_numb} {"/"} {second_numb} {"result is:"} {result} {" [without floating value]"}')
+print(F'{first_numb} {"/"} {second_numb} {result_msg} {result} {" [without floating value]"}')
 
 # Rest modulus:
 
@@ -37,7 +40,7 @@ print(F'{first_numb} {"%"} {second_numb} {"remainder is:"} {result}')
 # With the powah of python:
 
 result = first_numb ** second_numb
-print(F'{first_numb} {"^"} {second_numb} {"result is:"} {result}')
+print(F'{first_numb} {"^"} {second_numb} {result_msg} {result}')
 
 
 # Using a augmented operator possibilities:

@@ -67,8 +67,3 @@ print(first_var, second_var)
 # {}                                Empty dictionary
 # {1, 2, 4, 8, 'hello'}             Set
 # There is no literal to denote an empty set; use the builtin function set() instead
-
-# BONUS PART
-
-# Learn more:
-# Memory management in Python: https://www.youtube.com/watch?v=F6u5rhUQ6dU
