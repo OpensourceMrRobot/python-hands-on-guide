@@ -31,7 +31,7 @@ print(list_matrix)
 
 # What if you wanted a list with a hundred times the value 0:
 
-list_zero = [0 for n in range(100)]
+list_zero = [0 for n in range(25)]
 print(list_zero)
 
 # Want it event shorter and sweeter:
@@ -46,7 +46,7 @@ print(list_combined)
 
 # You can also make list like so:
 
-list_exclusive_20 = list(range(20))
+list_range = list(range(20))
 list_chars = list('Alexander')
 
 # See what we get:
@@ -54,4 +54,4 @@ print(list_exclusive_20)
 print(list_chars)
 
 # How big is our list, well lets print it out using the len() function:
-print(F'{"The list of chars contains:"} {len(list_chars)} {"values."}')
+print(F'The list of chars contains: {len(list_chars)} values.')
