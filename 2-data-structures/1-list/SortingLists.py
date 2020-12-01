@@ -38,8 +38,8 @@ print(id(numbers), new_line)
 # print(id(returned_new_list))
 
 # Lets have a print out to see that its sorted in ascending order:
-print(F'{"Ascending order:"} {returned_new_list}')
+print(F'Ascending order: {returned_new_list}')
 
 
 # Lets reverse that in to descending order:
-print(F'{"Descending order:"} {sorted(returned_new_list, reverse=True)}')
+print(F'Descending order: {sorted(returned_new_list, reverse=True)}')

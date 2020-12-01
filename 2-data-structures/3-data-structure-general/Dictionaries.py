@@ -1,5 +1,3 @@
-# TODO: Fix layout of this file this is horrible! Ashamed thou should be
-
 # In Python we have a very powerful data structure to hold key-value pairs: dictionaries.
 # We can only use immutable objects as the key [so mostly string is used], the value can be whatever no limitations.
 
@@ -39,7 +37,7 @@ print(F"{msg_x} {first_point['x']}")
 
 # We can't use numeric indexes like we do with lists, so the following syntax will trow an exception:
 
-# print(F"{'Value of first element:'} {first_point[0]}")  # comment to continue beyond this line.
+# print(F"Value of first element: {first_point[0]}")  # comment to continue beyond this line.
 
 
 # Of course we can change the value as follows:
@@ -70,7 +68,7 @@ if invalid_key in first_point:
 
 # Better even would be to use the get() method, this will return None if the key is invalid [uncomment to see diff]:
 
-print(F"{'Value returned when using a invalid key:'} {first_point.get(invalid_key)}", new_line)
+print(F"Value returned when using a invalid key: {first_point.get(invalid_key)}", new_line)
 print(first_point.get(invalid_key, first_point[first_key]))  # We return a None object if the key is not found.
 
 
@@ -86,7 +84,7 @@ print(F"{first_point} {mem_loc_msg} {id(first_point)}", new_line)
 # We can loop over our keys, and use the key to retrieve the corresponding value:
 
 for key in first_point:
-    print(F"{'Key:'} {key} {'Value:'} {first_point.get(key)}", new_line)
+    print(F"Key: {key} Value: {first_point.get(key)}", new_line)
 
 
 # We can also iterate over our dictionary returning a tuple holding the key and value:
@@ -99,4 +97,4 @@ else:
 # We can of course unpack the tuple:
 
 for key, value in first_point.items():
-    print(F"{'The key:'} {key} {'holds the value:'} {value}")
+    print(F"The key: {key} holds the value: {value}")

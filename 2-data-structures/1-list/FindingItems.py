@@ -12,9 +12,9 @@ print(letters.index('e'))
 # Do a check first dummy:
 
 if '²' in letters:  # change '²' to an occurring char for different outcome
-    print(F'{"You must be Senior programmer, yes?"} {letters.index("a")}')  # Comment line 8, dummy
+    print(F'You must be Senior programmer, yes? {letters.index("a")}')  # Comment line 8, dummy
 
 # We can also count the occurrence of a certain value:
 
 char = 'l'  # Change it to '²' and see what happens, no worries ;)
-print(F'{"The char"} {char} {"has occurred:"} {letters.count(char)} {"times"}')
+print(F'The char {char} has occurred: {letters.count(char)} times')

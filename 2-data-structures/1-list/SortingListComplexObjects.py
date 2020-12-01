@@ -1,12 +1,11 @@
 # What if we have a list of Tuples and want to sort them,
 # You are writing a program for processing orders:
 
-# Lets 1-start by making a list holding Tuple values:
+# Lets start by making a list holding Tuple values:
 
 items = [
     # Every item in this list is a tuple containing 2 values:
-    # 1. Product name
-    # 2. Price
+    # 1. Product name 2. Price
     ('Product1', 10),
     ('Product2', 9),
     ('Product3', 18),
