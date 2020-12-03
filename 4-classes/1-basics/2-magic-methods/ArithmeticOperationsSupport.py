@@ -23,7 +23,7 @@ class Human:
         return self.intelligence + other.intelligence
 
 
-elliot = Human('Sam', 'Esmail', 8000)
+elliot = Human('Sam', 'Esmail', 9001)
 snoop = Human('Snoop', 'Lion', 420)
 
 print(f'Combined intelligence: {snoop + elliot}{new_line}')

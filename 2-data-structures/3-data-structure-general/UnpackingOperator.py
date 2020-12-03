@@ -5,7 +5,9 @@ numbs = [x for x in range(1, 11)]  # Making a list to play with, remember second
 # Nothing new here, print the result:
 print(numbs)
 
-# But we see that we print a string representation of our list, so what if we want the individual numbers of our list:
+# But we see that we print a string representation of our list, 
+# so what if we want the individual numbers of our list:
+
 print(*numbs)  # This is the same as the JS spread operator ...
 
 # So you want to see its full potential, its raw power? Okay but dont you say you weren't warned:
@@ -37,4 +39,3 @@ combined = {**first, **second}  # We could of course add even other values here.
 
 # Lets see what we get:
 print(combined)
-

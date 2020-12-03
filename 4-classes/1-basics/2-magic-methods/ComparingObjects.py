@@ -66,6 +66,7 @@ first_human = Human(out_surname, out_name, answer_to_everything)
 sec_human = Human(out_surname, out_name, teenager_iq)
 
 # Put the magic method __eq__ in comment, run the program again to see the diff:
+
 print(f'Human 1 and human 2 are the same object: {first_human == sec_human}')
 print(f'Human 1 is more advanced then human 2: {first_human > sec_human}{new_line}')
 

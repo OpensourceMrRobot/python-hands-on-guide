@@ -1,7 +1,7 @@
-# We will continue with the code created in the MyException.py class, and see how we can handle multiple exceptions:
+# Try and see what happens if you put 0 as the input in our console
 
 try:
-    age = int(input('Please fill in your age: '))  # Try and see what happens if you put 0 as the input in our console
+    age = int(input('Please fill in your age: '))
     x_factor = 42 / age
 except ValueError:
     print('You did not enter a valid age!')

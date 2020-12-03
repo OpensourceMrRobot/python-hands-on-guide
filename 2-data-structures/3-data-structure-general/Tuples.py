@@ -28,7 +28,7 @@ print(combined)
 
 # If you want to enlarge the Tuple with duplicate values:
 
-combined = combined * 3
+combined *= 3
 print(combined)
 
 # To convert a list to a Tuple use the built-in function tuple():
@@ -41,14 +41,14 @@ print(tuple_points)
 
 # We can do this with a string too:
 
-char_values = tuple('Alexander')
+char_tuple = tuple('Alexander')
 
 # Let's check the result:
-print(char_values)
+print(char_tuple)
 
 # Access an individual index just like a list:
 
-print(char_values[0])  # Or a slice of the Tuple: char_values[0:4]
+print(char_tuple[:4])  # Or a slice of the Tuple: char_tuple[0:4]
 
 # Has allot of the same features as list, but you simply cant modify the values of a Tuple.
 # So no adding, removing functions as is the case with list.

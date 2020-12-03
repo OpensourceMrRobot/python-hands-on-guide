@@ -29,7 +29,4 @@ class Point:
 point = Point.zero()
 
 # Check the results of our hard working factory:
-print('x coordinate:', point.x)
-print('y coordinate:', point.y)
-print('z coordinate:', point.z)
-
+point.draw()

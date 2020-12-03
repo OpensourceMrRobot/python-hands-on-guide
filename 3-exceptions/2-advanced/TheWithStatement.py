@@ -1,6 +1,9 @@
+# !Use nano and the playground dir to show demo code [create a file to use]! !Delete before sharing code!
+
 # Makes sense:
-path = '../txt-files/rand.txt'
-sec_path = '../txt-files/second_file.txt'
+
+path = 'CostlyExceptions.py'
+sec_path = 'RaisingExceptions.py'
 
 # There is a way in Python that closes certain (not all!) resources automatically,
 # this means our finally block is not needed anymore.

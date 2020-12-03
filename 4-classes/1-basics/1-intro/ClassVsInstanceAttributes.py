@@ -22,7 +22,7 @@ first_point = Point(54, 44, 78)
 # Because of the dynamic character of the language we can do the following:
 
 first_point.foo = 'bar'
-print(f'foo: {first_point.foo}\n')
+print('foo: ', first_point.foo, '\n')
 
 # x; y; z; foo are all instance attributes,
 # this means if we make a second instance of this object we can store different values in these attributes:
@@ -37,18 +37,18 @@ print()
 
 # If we want to print our Class attribute default_col we can do this in the following ways:
 
-print(f'instant ref default color: {first_point.default_col}')  # Instance reference
-print(f'class ref default color: {Point.default_col}\n')  # Class reference
-print()
+print('instant ref default color: ', first_point.default_col)  # Instance reference
+print('class ref default color: ', Point.default_col, '\n')  # Class reference
 
 # Now lets burn the world down:
 
 Point.default_col = 'green'
 first_point.default_col = 'yellow'
 
-print(f'first instant ref default color: {first_point.default_col}')  # Instance reference
-print(f'second instant ref default color: {sec_point.default_col}')  # Instance reference
-print(f'class ref default color: {Point.default_col}')  # Class reference
+print('first instant ref default color: ', first_point.default_col)  # Instance reference
+print('second instant ref default color: ', sec_point.default_col)  # Instance reference
+
+print('class ref default color: ', Point.default_col)  # Class reference
 
 # In practical sense you will most likely use instance attributes;
 # but there are of course places where you want class attributes over instance attributes!
