@@ -15,8 +15,8 @@ class Point:
         self.x = x
         self.y = y
 
-    # def __eq__(self, other):
-    #     return self.x == other.x and self.y == other.y
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
 
 
 # Making two objects that have the same values for x and y:
@@ -27,7 +27,7 @@ sec_point = Point(4, 20)
 # Now we can compare them:
 
 print(f"first_point id: {id(first_point)}, sec_point id: {id(sec_point)}")
-print(f"first_point has the same values as sec_point: {first_point == sec_point}\n")  # Uncomment __eq__ method
+print(f"first_point has the same values as sec_point: {first_point == sec_point}\n")
 
 
 # There is actually a friendlier way of doing the same as all the boilerplate code above:

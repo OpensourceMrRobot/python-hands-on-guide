@@ -38,15 +38,15 @@ def draw_multi(controls):
 
 # Lets make some instances:
 
-tb = TextBox()
-ddl = DropDownList()
+text_box = TextBox()
+drop_down_list = DropDownList()
 
-list_ui = [tb, ddl]
+list_ui = [text_box, drop_down_list]
 
 # Lets test polymorphism out:
 
-draw_single(tb)
-draw_single(ddl)
+draw_single(text_box)
+draw_single(drop_down_list)
 
 print()  # Cleaner print out.
 

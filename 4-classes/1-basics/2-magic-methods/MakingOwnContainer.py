@@ -35,7 +35,7 @@ class TagCloud:
     # Do a check if the tag is already stored, if so we add to the value of our dictionary.
     # If key not already there, we set the key and give it value of 1.
     def add(self, tag):
-        tag = tag.lower()  # Uncomment after reaching line 57
+        tag = tag.lower()
         self.tags[tag] = self.tags.get(tag, 0) + 1
 
     def __getitem__(self, item):

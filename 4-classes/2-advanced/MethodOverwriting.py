@@ -1,4 +1,4 @@
-# In this class we're going to take a look at method overwriting, this can be useful in allot of ways.
+# In this class we're going to take a look at method overwriting, this can be useful in a lot of ways.
 # We have a constructor in the Animal class, this constructor will be inherited by every subclass,
 # Unless we overwrite it.
 
