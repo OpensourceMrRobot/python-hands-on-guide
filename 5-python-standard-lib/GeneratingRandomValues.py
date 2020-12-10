@@ -38,12 +38,10 @@ print(f"Random password first attempt: {random.choices(string.ascii_letters + st
 
 print(f"Random password second attempt: {''.join(random.choices((string.ascii_letters + string.digits), k=22))}")
 
-# We can also shuffle a list into a random order:
+# Making a list to play around with:
 
-numbers = range(1, 11)
-
-# printout what we get:
-print(f"printout of numbers before random shuffle: {numbers}")
+numbers = list(range(1, 11))
+print('printout of numbers before random shuffle: ', numbers)
 
 # Lets shuffle the values of our list:
 
@@ -51,4 +49,3 @@ random.shuffle(numbers)
 
 # printout what we get:
 print(f"printout of numbers after random shuffle: {numbers}")
-

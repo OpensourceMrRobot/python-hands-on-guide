@@ -38,7 +38,7 @@ json_file.write_text(data)
 
 # We can also take a json file and convert that to an Python object of course:
 
-data = json_file_nottingham.read_text() # data is a string containing our data[movies] as a json string representation.
+data = json_file_nottingham.read_text()  # data is a string containing our data[movies] as a json string representation.
 
 # Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing a JSON document) to a Python object:
 

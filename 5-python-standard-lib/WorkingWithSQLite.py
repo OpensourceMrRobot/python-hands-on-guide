@@ -2,7 +2,6 @@ import sqlite3
 import json
 from pathlib import Path
 import logging
-import copy
 
 # Makes sense:
 
@@ -14,7 +13,7 @@ movies = json.loads(data)  # If this makes no sense go back to WorkingWithJSON.p
 # When working with db, a logger comes in handy!
 
 logging.basicConfig(filename='./sqlite-db/db.log',
-                    format='%(asctime)s %(message)s') # Create and configure logger
+                    format='%(asctime)s %(message)s')  # Create and configure logger
 
 # Creating logger instance to work with.
 logger = logging.getLogger()
