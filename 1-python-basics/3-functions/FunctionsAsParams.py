@@ -1,23 +1,48 @@
-# We can pass functions as arguments to other functions:
+def shout(text):
+    return text.upper()
 
 
-def total_sum(n, func):
-    total = 0
-    for num in range(1, n+1):
-        total += func(num)
-    else:
-        return total
+print(shout("Hello"))
+
+yell = shout
+print(yell("Hello"))
 
 
-def square(x):
-    return x*x
+def whisper(text):
+    return text.lower()
 
 
-def cube(x):
-    return x*x*x
+def greet(func):
+    # storing the function in a variable
+    greeting = func("Hi, I am created by a function passed as an argument.")
+    print(greeting)
 
 
-num_to_calc = 3
+greet(shout)
+greet(whisper)
 
-print(f'Result square: {total_sum(num_to_calc, square)}')
-print(f'Result cube: {total_sum(num_to_calc, cube)}')
+
+def hello_decorator(func):
+
+    # inner1 is a Wrapper function in which the argument is called
+
+    # inner function can access the outer local functions like in this case "func"
+
+    def inner1():
+        print("Hello, this is before function execution")
+
+        # Calling the actual function now inside the wrapper function
+        func()
+
+        print("This is after function execution")
+
+    return inner1
+
+
+def function_to_be_used():
+    print("This is inside the function !!")
+
+
+function_to_be_used = hello_decorator(function_to_be_used)
+
+function_to_be_used()

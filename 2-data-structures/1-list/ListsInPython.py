@@ -14,10 +14,12 @@ list_mix = [42, 3.14, 'hello', True]  # The items of a list are arbitrary object
 
 # Printout time:
 
-print(list_strings)
-print(list_numbers)
-print(list_booleans)
-print(list_mix)
+msg = "List of type:"
+
+print(f"{msg} {type(list_strings[0])} {list_strings}")
+print(f"{msg} {type(list_numbers[0])} {list_numbers}")
+print(f"{msg} {type(list_booleans[0])} {list_booleans}")
+print(f"{msg} mixed {list_mix}")
 
 # Of course we can also have a list of lists:
 
@@ -50,7 +52,7 @@ list_range = list(range(20))
 list_chars = list('Alexander')
 
 # See what we get:
-print(list_exclusive_20)
+print(list_range)
 print(list_chars)
 
 # How big is our list, well lets print it out using the len() function:

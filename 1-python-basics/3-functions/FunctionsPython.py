@@ -35,12 +35,12 @@ print(increment_by_one(2, 5))  # If we give the second parameter default value i
 
 # We can even give back multiple values:
 
-def pass_multiple_values():
+def return_multiple_values():
     # We can use randint to generate random value integer
     return randint(0, 100), randint(0, 100), randint(100, 1000)
 
 
-print(pass_multiple_values())  # What we get back is called a tuple [basically read only list]
+print(return_multiple_values())  # What we get back is called a tuple [basically read only list]
 
 
 # You want more control see below:
@@ -50,5 +50,6 @@ def add(first_val: int, second_val: int) -> int:
 
 # Now a fellow programmer gets his arguments highlighted so he knows he is using your function
 # in another way then its meant [still possible though ;)]:
+
 
 print(add('a', 'b'))

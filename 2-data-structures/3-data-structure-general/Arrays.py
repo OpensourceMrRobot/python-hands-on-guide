@@ -3,7 +3,7 @@
 from array import array
 from random import randint
 import sys
-import time
+import timeit
 
 # Makes sense:
 iteration_times = 10
@@ -23,12 +23,12 @@ array_numbers = array('i', list_numbers[:])
 # We define a function to test execution time over n iterations:
 
 def get_the_execution_time(numbers, iterations):
-    start_time = time.time()
+    start_time = timeit.default_timer()
     for count in range(iterations):
         for number in numbers:
             pass  # placeholder, because we dont want anything to happen while iterating.
     else:
-        print("--- %s seconds execution time ---" % (time.time() - start_time), type(numbers))
+        print("--- %s seconds execution time ---" % (timeit.default_timer() - start_time), type(numbers))
 
 
 # Function that prints information about the size of an argument past in bytes to the console:

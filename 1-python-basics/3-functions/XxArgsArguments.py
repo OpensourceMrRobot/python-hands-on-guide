@@ -1,4 +1,4 @@
-# Lets simulate some db action with python 3.7 :D:
+# Lets simulate some db action with python 3.7 :D
 
 # We can write a function for that:
 
@@ -10,7 +10,9 @@
 
 def save_user(**user):
     print(f'user saved: {user}')
-    print(user['name'])
+    if user['name']:
+        print(user['name'])
+
 
 save_user(id=1, name='Admin')  # printout holds a key/value pair
 

@@ -1,7 +1,6 @@
 # In the Stacks.py file we are using the LIFO principle,
 # but here we will be using the FIFO principle [First In First Out]
 
-
 # For this we will not be using a list as this would be too cpu expensive
 # Explanation for this:
 

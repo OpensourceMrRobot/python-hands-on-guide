@@ -19,6 +19,10 @@
 student_count = 1
 print(type(student_count))
 
+# Returns a type object
+
+print(type(type(1)))
+
 # Some examples of types in Python:
 
 print(type(1.1))

@@ -12,8 +12,8 @@ spaces_string = ' '
 
 # Lets take a look at some examples with not operator:
 
-if not name:  # We are using the fact that an empty string is Falsy
-    print("name is empty")
+if name and spaces_string:  # We are using the fact that an empty string is Falsy
+    print("String variables contain a string value")
 
 if not empty_name:
     print("empty_name is empty")
@@ -35,11 +35,11 @@ if age >= 18 and age < 65:
 # And for completeness the or operator:
 
 if False or 1:
-	print('1 is True')
+    print('1 is True')
 
-# This is called chaining comparision operators
+# This is called chaining comparison operators
 
 age = 21
 
 if 18 <= age < 65:
-	print('chaining comparision operators: 18 <= age < 65')
+    print('chaining comparison operators: 18 <= age < 65')

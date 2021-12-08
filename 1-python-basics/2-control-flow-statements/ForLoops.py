@@ -61,5 +61,31 @@ range(5_000_000)
 
 list_numbers = list(range(10))
 print(new_line, list_numbers)
+print()
 
 # Yes, follow the white rabbit: https://docs.python.org/3/library/stdtypes.html#range
+
+# Using the break statement:
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+print()
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i)
+
+
+# How to find prime numbers in python using double for loop
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(f'{n} equals {x} * {n//x}')
+            break
+    else:
+        print(f'{n} is a prime number')

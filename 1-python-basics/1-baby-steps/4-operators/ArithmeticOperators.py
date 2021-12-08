@@ -1,6 +1,6 @@
 result_msg = "result is:"
 
-print('Let\'s 1-start with the Arithmetic operators')
+print("Let's start with the Arithmetic operators")
 
 first_numb = int(input('Fill in a number:\n'))
 second_numb = int(input('Fill in another number:\n'))

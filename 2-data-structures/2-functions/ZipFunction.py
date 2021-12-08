@@ -31,5 +31,5 @@ print(F'{msg_lists} {list_combined_out_other_lists}', new_line)
 
 # We can do this with as many iterable objects as desired, beware will take the shortest iterable, loses other indexes:
 
-list_combined_out_iterables = list(zip(products, prices, 'ABCDEFG'))
+list_combined_out_iterables = list(zip(products, prices, '123456'))
 print(F'{msg_iterables} {list_combined_out_iterables}', new_line)
